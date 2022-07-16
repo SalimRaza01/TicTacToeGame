@@ -1,7 +1,7 @@
 import React from 'react';
 import Square from './Square';
 
-const board = ({ board, handleSquareClick }) => {
+const Board = ({ board, handleSquareClick }) => {
   const renderSquare = position => {
     return (
       <Square
@@ -32,4 +32,4 @@ const board = ({ board, handleSquareClick }) => {
   );
 };
 
-export default board;
+export default Board;
