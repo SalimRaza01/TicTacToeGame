@@ -1,6 +1,6 @@
 import React from 'react';
 
-const History = ({ hsitory, moveTo, currentMove }) => {
+const History = ({ history, moveTo, currentMove }) => {
   return (
     <ul>
       {history.map((_, move) => {
@@ -15,7 +15,7 @@ const History = ({ hsitory, moveTo, currentMove }) => {
                 moveTo(move);
               }}
             >
-              {move === 0 ? 'Go to Game Start' : `Go to Move #${move}`}
+              {move === 0 ? 'Go to game start' : `Go to move #${move}`}
             </button>
           </li>
         );
